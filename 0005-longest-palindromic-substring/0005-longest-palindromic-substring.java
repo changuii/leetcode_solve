@@ -5,7 +5,7 @@ class Solution {
         for(char x : z.toCharArray()){
             s = s + "?" + x;
         }
-        System.out.println(s);
+        s += "?";
 
         String max = "";
         for(int i=1; i<s.length()-1; i++){
