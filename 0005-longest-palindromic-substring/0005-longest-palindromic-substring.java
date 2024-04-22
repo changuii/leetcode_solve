@@ -7,8 +7,10 @@ class Solution {
         }
         s += "?";
 
+        
         String max = "";
         for(int i=1; i<s.length()-1; i++){
+            // ? a ? a ? -> a
             String current = s.charAt(i)+"";
             int a = 1;
             while(i-a >= 0 && i + a < s.length() && s.charAt(i-a) == s.charAt(i+a)){
